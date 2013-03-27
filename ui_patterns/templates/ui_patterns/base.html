@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% load ui_patterns_tags %}
+
+{% block extra_head %}{{ block.super }}
+  <link href="{{ STATIC_URL }}ui_patterns/css/ui_patterns.css" rel="stylesheet" />
+{% endblock extra_head %}
+
+{% block body_class %}{{ block.super }} ui_patterns{% endblock body_class %}
+
+{% block content %}
+  <article class="ui_pattern_article">{% block pattern_content %}{% endblock pattern_content %}</article>
+  <aside class="ui_pattern_aside">{% pattern_list %}</aside>
+{% endblock content %}

@@ -1,0 +1,7 @@
+{% extends 'ui_patterns/base.html' %}
+
+{% block pattern_content %}
+  {% for object in object_list %}
+    <aside>{{ object }}</aside>
+  {% endfor %}
+{% endblock pattern_content %}

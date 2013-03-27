@@ -1,0 +1,8 @@
+.ui_pattern_aside,
+.ui_pattern_article { width:100%; float:left; }
+
+@media screen and (min-width:600px) {
+  .ui_pattern_article { width:74%; float:right; }
+  .ui_pattern_aside { width:22%; float:left; }
+}
+

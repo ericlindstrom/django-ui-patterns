@@ -1,0 +1,5 @@
+<ul>
+  {% for pattern in patterns %}
+  <li class="nav_{{ pattern.slug }}"><a href="{{ pattern.get_absolute_url }}">{{ pattern.title }}</a></li>
+  {% endfor %}
+</ul>

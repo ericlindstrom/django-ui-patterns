@@ -1,0 +1,14 @@
+{% extends 'ui_patterns/base.html' %}
+
+{% block body_class %}{{ block.super }} {{ object.slug }}{% endblock body_class %}
+
+
+{% block pattern_content %}
+  <h1>{{ object.title }}</h1>
+  <div class="example">
+     {{ object.markup|safe }}
+  </div>
+  <div class="html">
+    <pre>{{ object.markup }}</pre>
+  </div>
+{% endblock pattern_content %}
