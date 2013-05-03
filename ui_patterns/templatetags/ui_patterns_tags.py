@@ -5,5 +5,5 @@ register = template.Library()
 
 @register.inclusion_tag('ui_patterns/tag_pattern_list.html')
 def pattern_list():
-    patterns = Pattern.objects.live()
+    patterns = Pattern.objects.live().order_by('order')
     return { 'patterns': patterns }
